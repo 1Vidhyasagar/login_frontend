@@ -11,8 +11,8 @@ function Login() {
       const res = await axios.post(
         "https://login-backend-pcfp.onrender.com/api/auth/login",
         {
-          email,
-          password,
+          email: email,
+          password: password,
         }
       );
       setMsg('✅ Login successful! Token: ' + res.data.token);
